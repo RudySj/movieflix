@@ -1,4 +1,7 @@
 /* Page one CSS */
+html {
+    background-image: url(images/billie_holiday.png);
+}
 
 .container h1 {
     font-family: 'Six Caps', sans-serif;
@@ -7,6 +10,21 @@
     letter-spacing: 0.05em;
     margin-top: auto;
 /*    margin-bottom: auto;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.container h1:before,
+.container h1:after {
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #000; 
+    margin: auto 1%; 
+}
+
+#popular-movie:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .poster-main {
@@ -30,6 +48,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.poster-container>a {
+    text-decoration: none;
+    color: black;
 }
 
 .poster-text {
@@ -159,6 +182,9 @@ h1>a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255,255,255,0.5);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .movie-desc h3, .movie-reviews h3, .movie-showtimes h3 {
@@ -171,6 +197,11 @@ h1>a {
 .movie-desc p {
     width: 90%;
     font-family: 'Open Sans', sans-serif;    
+}
+
+.movie-reviews {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .movie-table {
