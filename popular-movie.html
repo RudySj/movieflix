@@ -19,11 +19,108 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        }    
+        }
+
         .site-title {
             width: 400px;
             margin: auto;
             text-align: center;
+        }
+
+        .poster {
+            height: 400px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .content-top {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .content-top div {
+            flex-basis: 550px;
+        }
+
+        .movie-info {
+            align-self: flex-end;
+            justify-content: end
+        }
+
+        .movie-info span {
+            padding-bottom: 10px;
+        }
+
+        .critic-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .critic-container p {
+            flex-basis: 300px;
+        }
+
+        .movie-desc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .movie-desc p {
+            width: 90%
+        }
+
+        .movie-table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .movie-showtimes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .movie-showtimes table {
+            flex-basis: 560px;
+            border-collapse: collapse;
+        }
+
+        .movie-showtimes table td,
+        .movie-showtimes table th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
     </style>
 
@@ -33,106 +130,148 @@
 
 <body>
 
-    <h1 class="site-title"><a href="index.html">Movie Flix</a></h1>
-    
-    <h1> Joker </h1>
+    <div class="container">
+        <h1 class="site-title"><a href="index.html">Movie Flix</a></h1>
 
-    <div class="row">
-        <div class="col">
-            <img
-                src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+        <div class="content-top row">
+
+            <div class="col center">
+                <h1 class="center-text"> Joker </h1>
+                <img class="poster"
+                    src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+            </div>
+
+            <div class="col movie-info">
+                <span> Director: Todd Phillips </span>
+                <span> Budget: 55 million USD </span>
+                <span> Release Date: October 4, 2019 </span>
+                <a name="Cast">
+                    <span> Cast </span>
+                </a>
+                <ul>
+                    <li> Joaquin Phoenix </li>
+                    <li> Robert De Niro </li>
+                    <li> Zazie Beetz </li>
+                    <li> Frances Conroy </li>
+                    <li> Brett Cullen </li>
+                    <li> Shea Whigham </li>
+                    <li> Bill Camp </li>
+                    <li> Glenn Fleshler </li>
+                    <li> Leigh Gill </li>
+                    <li> Josh Pais </li>
+                    <li> Rocco Luna </li>
+                    <li> Marc Maron </li>
+                    <li> Sondra James </li>
+                    <li> Murphy Guyer </li>
+                    <li> Douglas Hodge </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="col">
-            <p> Director: Todd Phillips </p>
-            <p> Budget: 55 million USD </p>
-            <p> Release Date: October 4, 2019 </p>
-            <a name="Cast"><p> Cast </p></a>
-            <ul>
-                <li> Joaquin Phoenix </li>
-                <li> Robert De Niro </li>
-                <li> Zazie Beetz </li>
-                <li> Frances Conroy </li>
-                <li> Brett Cullen </li>
-                <li> Shea Whigham </li>
-                <li> Bill Camp </li>
-                <li> Glenn Fleshler </li>
-                <li> Leigh Gill </li>
-                <li> Josh Pais </li>
-                <li> Rocco Luna </li>
-                <li> Marc Maron </li>
-                <li> Sondra James </li>
-                <li> Murphy Guyer </li>
-                <li> Douglas Hodge </li>
-            </ul>
+        <div class="row">
+
+
         </div>
+
+        <div class="movie-desc">
+
+            <h3 class="center-text">Synopsis</h3>
+            <!-- add link to anchor for showtimes?  -->
+            <p>An origin story set in 1981, Joker follows failed comedian Arthur Fleck who turns to a life of crime in
+                Gotham City. Forever alone in a crowd, he seeks connection by walking the streets of Gotham City. Arthur
+                wears two masks &ndash; the one he paints for his day job as a clown, and the guise he projects in a
+                futile
+                attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society,
+                Fleck
+                begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.</p>
+
+            <p>Director Todd Phillips conceived Joker in 2016 and wrote the script with Scott Silver throughout
+                2017. They were inspired by 1970s character studies, the films of Martin Scorsese, and the premise
+                of the graphic novel Batman: The Killing Joke (1988), which depicted the Joker as a failed stand-up
+                comedian. Since there was no definitive origin story for the Joker in the comics, Phillips and
+                Silver were free to create the story of becoming Joker. While Warner Bros. pushed for Leonardo
+                DiCaprio to be cast as the Joker, Phillips and Silver wrote the script with Phoenix in mind. He was
+                cast in July 2018 and the rest of the <a href="#Cast">cast</a> signed on by August.</p>
+
+            <p>Joker premiered at the 76th Venice International Film Festival and won the Golden Lion (Leone d’Oro),
+                one of the film industry’s most prestigious and distinguished prizes. While Joaquin Phoenix’s
+                performance received high acclaim, the portrayal of mental illness and its effects, the handling of
+                violence, and its overall dark tone divided critics.</p>
+
+            <!-- could add link to trailer on youtube, imdb page ?-->
+
+        </div>
+
+        <div class="movie-reviews">
+            <h3 class="center-text">Critic Reviews</h3>
+            <div class="critic-container">
+                <!-- style these so all three are displayed in one line? -->
+                <p>&ldquo; Led by Phoenix's ferocious, feral performance, this especially dark, gritty comic book movie
+                    is a character drama that's drawn more toward real-world troubles than to capes and
+                    crusading.&rdquo;
+                    <br>
+                    &ndash; <a href="https://www.commonsensemedia.org/movie-reviews/joker" target="_blank">Jeffrey M.
+                        Anderson, Common Sense Media</a></p>
+
+                <p>&ldquo;A grim, shallow, distractingly derivative homage to 1970s movies at their grittiest, Joker
+                    continues the dubious darker-is-deeper tradition.&rdquo;
+                    <br>
+                    &ndash; <a
+                        href="https://www.washingtonpost.com/goingoutguide/movies/joaquin-phoenix-is-a-vivid-operatic-joker-but-the-movie-is-way-too-full-of-itself/2019/10/01/a95e53a4-dfd5-11e9-b199-f638bf2c340f_story.html?tid=kp_google"
+                        target="_blank">Ann Hornaday, Washington Post</a></p>
+
+                <p>&ldquo;Joker is brutal, dark and a compelling origin story of a man's painful journey to self
+                    destruction.&rdquo;
+                    <br>
+                    &ndash; <a href="https://www.behindwoods.com/english-movies/joker-english/joker-english-review.html"
+                        target="_blank">Behindwoods</a></p>
+            </div>
+        </div>
+
+        <div class="movie-showtimes">
+            <!-- table of showtimes -->
+            <h3>Showtimes near: Irvine, CA</h3>
+            <table>
+                <tr>
+                    <th>Theater</th>
+                    <th>Date</th>
+                    <th>Times</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">AMC Classic Woodbridge</td>
+                    <td>10/17/19</td>
+                    <td>2:00pm; 3:30pm; 6:00pm; &amp; 8:00pm</td>
+                </tr>
+                <tr>
+                    <td>10/20/19</td>
+                    <td>1:30pm; 2:00pm; 5:15pm; &amp; 6:00pm; </td>
+                </tr>
+                <tr>
+                    <td>10/22/19</td>
+                    <td>12:00pm; 1:00pm; 3:00pm; &amp; 4:00pm</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">AMC Tustin</td>
+                    <td>10/22/19</td>
+                    <td>2:00pm; 5:00pm; 7:00pm; &amp; 10:00pm</td>
+                </tr>
+                <tr>
+                    <td>10/23/19</td>
+                    <td>7:15pm; 9:35pm </td>
+                </tr>
+                <tr>
+                    <td>Regal Edwards Irvine Spectrum</td>
+                    <td>10/23/19</td>
+                    <td>5:00pm; 6:35pm; 8:45pm; &amp; 10:55pm</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <a href="#"> Top of Page </a>
+        </div>
+        <!-- could add link to anchor back to top of page -->
     </div>
 
-
-    <h3>Synopsis</h3>
-    <!-- add link to anchor for showtimes?  -->
-    <p>An origin story set in 1981, Joker follows failed comedian Arthur Fleck who turns to a life of crime in Gotham City. Forever alone in a crowd, he seeks connection by walking the streets of Gotham City. Arthur wears two masks &ndash; the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.<p>
-    
-    <p>Director Todd Phillips conceived Joker in 2016 and wrote the script with Scott Silver throughout 2017. They were inspired by 1970s character studies, the films of Martin Scorsese, and the premise of the graphic novel Batman: The Killing Joke (1988), which depicted the Joker as a failed stand-up comedian. Since there was no definitive origin story for the Joker in the comics, Phillips and Silver were free to create the story of becoming Joker. While Warner Bros. pushed for Leonardo DiCaprio to be cast as the Joker, Phillips and Silver wrote the script with Phoenix in mind. He was cast in July 2018 and the rest of the <a href="#Cast">cast</a> signed on by August.</p>
-    
-    <p>Joker premiered at the 76th Venice International Film Festival and won the Golden Lion (Leone d’Oro), one of the film industry’s most prestigious and distinguished prizes. While Joaquin Phoenix’s performance received high acclaim, the portrayal of mental illness and its effects, the handling of violence, and its overall dark tone divided critics.</p>
-    
-    <!-- could add link to trailer on youtube, imdb page ?-->
-    
-    <h3>Critic Reviews</h3>
-    
-    <!-- style these so all three are displayed in one line? --> 
-    <p>&ldquo; Led by Phoenix's ferocious, feral performance, this especially dark, gritty comic book movie is a character drama that's drawn more toward real-world troubles than to capes and crusading.&rdquo;
-    <br>
-    &ndash; <a href="https://www.commonsensemedia.org/movie-reviews/joker" target="_blank">Jeffrey M. Anderson, Common Sense Media</a></p>
-    
-    <p>&ldquo;A grim, shallow, distractingly derivative homage to 1970s movies at their grittiest, Joker continues the dubious darker-is-deeper tradition.&rdquo;
-    <br>
-    &ndash; <a href="https://www.washingtonpost.com/goingoutguide/movies/joaquin-phoenix-is-a-vivid-operatic-joker-but-the-movie-is-way-too-full-of-itself/2019/10/01/a95e53a4-dfd5-11e9-b199-f638bf2c340f_story.html?tid=kp_google" target="_blank">Ann Hornaday, Washington Post</a></p>
-    
-    <p>&ldquo;Joker is brutal, dark and a compelling origin story of a man's painful journey to self destruction.&rdquo;
-    <br>
-    &ndash; <a href="https://www.behindwoods.com/english-movies/joker-english/joker-english-review.html" target="_blank">Behindwoods</a></p>
-
-    <!-- table of showtimes -->
-    <h3>Showtimes near: Irvine, CA</h3>
-    <table>            
-        <tr>
-            <th>Theater</th>
-            <th>Date</th>
-            <th>Times</th>
-        </tr>
-        <tr>
-            <td rowspan="3">AMC Classic Woodbridge</td>
-             <td>10/17/19</td>
-            <td>2:00pm; 3:30pm; 6:00pm; &amp; 8:00pm</td>
-        </tr>
-        <tr>
-            <td>10/20/19</td>                    
-            <td>1:30pm; 2:00pm; 5:15pm; &amp; 6:00pm; </td>
-        </tr>
-        <tr>
-            <td>10/22/19</td>
-            <td>12:00pm; 1:00pm; 3:00pm; &amp; 4:00pm</td>
-         </tr>
-        <tr>
-            <td rowspan="2">AMC Tustin</td>
-            <td>10/22/19</td>
-            <td>2:00pm; 5:00pm; 7:00pm; &amp; 10:00pm</td>
-        </tr>
-        <tr>
-            <td>10/23/19</td>
-            <td>7:15pm; 9:35pm </td>
-        </tr>
-        <tr>
-            <td>Regal Edwards Irvine Spectrum</td>
-            <td>10/23/19</td>
-            <td>5:00pm; 6:35pm; 8:45pm; &amp; 10:55pm</td>
-        </tr>
-    </table>
-
-
-    <!-- could add link to anchor back to top of page -->
 </body>
 
 </html>
