@@ -1,7 +1,12 @@
 /* Page one CSS */
 
 .container h1 {
+    font-family: 'Six Caps', sans-serif;
     text-align: center;
+    font-size: 6em;
+    letter-spacing: 0.05em;
+    margin-top: auto;
+/*    margin-bottom: auto;*/
 }
 
 .poster-main {
@@ -28,7 +33,9 @@
 }
 
 .poster-text {
+    font-family: 'Archivo Narrow', sans-serif;
     margin: 10px;
+    font-size: 1.2em;
 }
 
 .info-container {
@@ -56,6 +63,7 @@
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .info-container div h4 {
@@ -63,9 +71,22 @@
     border-bottom: 2px solid black;
     text-align: center;
     padding-bottom: 5px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+}
+
+.info-container li {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Page two CSS */
+
+h1>a {
+    text-decoration: none;
+    color: black;
+}
 
 .row {
     display: flex;
@@ -73,14 +94,16 @@
     justify-content: space-around;
 }
 
+/*
 .site-title {
     width: 400px;
     margin: auto;
     text-align: center;
 }
+*/
 
 .poster-popular {
-    height: 400px;
+    height: 550px;
     width: 500px;
     border-radius: 10px;
 }
@@ -111,7 +134,16 @@
 
 .movie-info {
     align-self: flex-end;
-    justify-content: end
+    justify-content: end;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.movie-info h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    margin-top: auto;
 }
 
 .movie-info span {
@@ -128,6 +160,7 @@
 
 .critic-container p {
     flex-basis: 300px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .movie-desc {
@@ -136,8 +169,16 @@
     align-items: center;
 }
 
+.movie-desc h3, .movie-reviews h3, .movie-showtimes h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+}
+
 .movie-desc p {
-    width: 90%
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;    
 }
 
 .movie-table {
@@ -161,6 +202,7 @@
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer {
@@ -168,6 +210,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .break {
