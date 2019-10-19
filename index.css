@@ -185,6 +185,10 @@ h1>a {
     background: rgba(255,255,255,0.5);
     margin-left: 5%;
     margin-right: 5%;
+    
+    /* so synopsis can have position: absolute */
+    position: relative;
+    padding-top: 50px;
 }
 
 .movie-desc h3, .movie-reviews h3, .movie-showtimes h3 {
@@ -192,6 +196,12 @@ h1>a {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 1.2em;
+}
+
+/* for position: absolute */
+#synopsis {
+    position: absolute;
+    top: 5px;
 }
 
 .movie-desc p {
