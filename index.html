@@ -15,73 +15,7 @@
     <meta name="author" content="">
 
 
-    <style>
-        .container h1 {
-            text-align: center;
-        }
-
-        .poster {
-            height: 400px;
-            width: 300px;
-            border-radius: 10px;
-        }
-
-        .poster-container {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around
-        }
-
-
-        .poster-container li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .poster-text {
-            margin: 10px;
-        }
-
-        .info-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: flex;
-            justify-content: space-around
-        }
-
-        .info-container div {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .info-container div table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-
-        .info-container div table td,
-        .info-container div table th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        .info-container div h4 {
-            width: 50%;
-            border-bottom: 2px solid black;
-            text-align: center;
-            padding-bottom: 5px;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -92,19 +26,21 @@
 
         <!-- First row  -->
         <ul class="poster-container">
-            <a href="popular-movie.html"><li>
-                <img class="poster"
-                    src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
-                <span class="poster-text"> Joker </span>
-                </li></a>
+            <a href="popular-movie.html">
+                <li>
+                    <img class="poster-main"
+                        src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+                    <span class="poster-text"> Joker </span>
+                </li>
+            </a>
 
             <li>
-                <img class="poster" src="https://images-na.ssl-images-amazon.com/images/I/51yXUqukECL.jpg">
+                <img class="poster-main" src="https://images-na.ssl-images-amazon.com/images/I/51yXUqukECL.jpg">
                 <span class="poster-text"> Maleficent </span>
             </li>
 
             <li>
-                <img class="poster"
+                <img class="poster-main"
                     src="https://heraldpublicist.com/wp-content/uploads/2019/10/echo/01_Zombieland-89516f3.jpg?quality=45&crop=4px,698px,1392px,927px&resize=620,413">
                 <span class="poster-text"> Zombieland: Double Tap </span>
             </li>
@@ -114,18 +50,18 @@
         <!-- Second row  -->
         <ul class="row poster-container">
             <li>
-                <img class="poster"
+                <img class="poster-main"
                     src="https://m.media-amazon.com/images/M/MV5BODBjOTAzZmMtNGJkOC00M2M3LWI1MTctZjZlMzdiODBkMzc0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_SY1000_CR0,0,674,1000_AL_.jpg">
                 <span class="poster-text"> The Addams Family </span>
             </li>
 
             <li>
-                <img class="poster" src="http://lornebalfe.com/wp-content/uploads/post/gemini-man/poster.jpg">
+                <img class="poster-main" src="http://lornebalfe.com/wp-content/uploads/post/gemini-man/poster.jpg">
                 <span class="poster-text"> Gemini Man </span>
             </li>
 
             <li>
-                <img class="poster" src="https://www.dreamworks.com/storage/cms-uploads/abominable-poster-3.jpg">
+                <img class="poster-main" src="https://www.dreamworks.com/storage/cms-uploads/abominable-poster-3.jpg">
                 <span class="poster-text"> Abominable </span>
             </li>
         </ul>

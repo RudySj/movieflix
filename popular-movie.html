@@ -14,119 +14,8 @@
     <meta name="description" content="Joker is a 2019 American psychological thriller film directed by Todd Phillips.">
     <meta name="author" content="SitePoint">
 
-    <style>
-        .row {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        .site-title {
-            width: 400px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .poster {
-            height: 400px;
-            width: 500px;
-            border-radius: 10px;
-        }
-
-        .row {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .col {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .center {
-            justify-content: center;
-            align-items: center;
-        }
-
-        .center-text {
-            text-align: center;
-        }
-
-        .content-top {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .content-top div {
-            flex-basis: 550px;
-        }
-
-        .movie-info {
-            align-self: flex-end;
-            justify-content: end
-        }
-
-        .movie-info span {
-            padding-bottom: 10px;
-        }
-
-        .critic-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .critic-container p {
-            flex-basis: 300px;
-        }
-
-        .movie-desc {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .movie-desc p {
-            width: 90%
-        }
-
-        .movie-table {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .movie-showtimes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .movie-showtimes table {
-            flex-basis: 560px;
-            border-collapse: collapse;
-        }
-
-        .movie-showtimes table td,
-        .movie-showtimes table th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
-
 
 <body>
 
@@ -137,7 +26,7 @@
 
             <div class="col center">
                 <h1 class="center-text"> Joker </h1>
-                <img class="poster"
+                <img class="poster-popular"
                     src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
             </div>
 
@@ -168,10 +57,7 @@
             </div>
         </div>
 
-        <div class="row">
-
-
-        </div>
+        <hr class="break">
 
         <div class="movie-desc">
 
@@ -202,6 +88,8 @@
 
         </div>
 
+        <hr class="break">
+
         <div class="movie-reviews">
             <h3 class="center-text">Critic Reviews</h3>
             <div class="critic-container">
@@ -227,6 +115,8 @@
                         target="_blank">Behindwoods</a></p>
             </div>
         </div>
+
+        <hr class="break">
 
         <div class="movie-showtimes">
             <!-- table of showtimes -->

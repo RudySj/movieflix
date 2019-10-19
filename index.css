@@ -1,0 +1,177 @@
+/* Page one CSS */
+
+.container h1 {
+    text-align: center;
+}
+
+.poster-main {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.poster-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+
+.poster-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.poster-text {
+    margin: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: flex;
+    justify-content: space-around
+}
+
+.info-container div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.info-container div table td,
+.info-container div table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.info-container div h4 {
+    width: 50%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Page two CSS */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.site-title {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.poster-popular {
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.content-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-top div {
+    flex-basis: 550px;
+}
+
+.movie-info {
+    align-self: flex-end;
+    justify-content: end
+}
+
+.movie-info span {
+    padding-bottom: 10px;
+}
+
+.critic-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.critic-container p {
+    flex-basis: 300px;
+}
+
+.movie-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-desc p {
+    width: 90%
+}
+
+.movie-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-showtimes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-showtimes table {
+    flex-basis: 560px;
+    border-collapse: collapse;
+}
+
+.movie-showtimes table td,
+.movie-showtimes table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.break {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
